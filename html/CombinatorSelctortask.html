@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="shortcut icon" href="./icon-1379249_640.png" type="image/x-icon"> -->
+    <style>
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        main >.section{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 120px;
+            background-color: #524C42;
+            width: 300px;
+            border: 1px solid black;
+            color: white;
+            gap: 0px 10px;
+            padding: 10px;
+            border-radius: 16px;
+        }
+        
+        .product  h3,h5,p{
+            margin: 0;
+        }
+        .imgparent img{
+            padding:8px 0px ;
+            border-radius: 50;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="section" is="section1">
+          <div class="imgparent" >          
+             <img src="./icon-1379249_640.png" height="100%" width="100%" alt="">
+          </div>
+          <div class="product">
+            <h3>Samsung</h3>
+            <h5><i>Rs21000</i></h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptatem.</p>
+          </div>
+        </section>
+        <section class="section" is="section1">
+            <div class="imgparent" >          
+               <img src="./icon-1379249_640.png" height="100%" width="100%" alt="">
+            </div>
+            <div class="product">
+              <h3>Samsung</h3>
+              <h5><i>Rs.12000</i></h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptatem.</p>
+            </div>
+          </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "custom-font-ExtraLight";
+    src: url("../asstes/fonts/PlaywriteIS-ExtraLight.ttf");
+}
+p{
+    font-family: "custom-font-ExtraLight";
+}

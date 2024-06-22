@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "my-custom-font-ExtraBoldItalic";
+    src: url(../asstes/fonts/Exo2-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: "my-custom-font-Regular";
+    src: url(../asstes/fonts/Exo2-Regular.ttf);
+}
+
+@font-face {
+    font-family: "my-custom-font-MediumItalic";
+    src: url(../asstes/fonts/Exo2-MediumItalic.ttf);
+}
+body{
+    background-image: url(../asstes/images/dead-sea-8385900_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+    padding: 30px;    
+    background-color: #00000060;
+
+}
+
+form>#StuentName {
+    display: flex;
+    align-items: center;
+    gap: 0px 10px;
+}
+#submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+input[type="text"] {
+    background-color: hotpink;
+    outline: none;
+    border: transparent;
+    padding: 4px 8px;
+    font-family: "my-custom-font-Regular";
+
+}
+
+h1,
+p {
+    text-align: center;
+    margin: 0;
+    font-family: "my-custom-font-ExtraBoldItalic";
+}
+
+
+label {
+    font-family: "my-custom-font-MediumItalic";
+}
+
+input+label {
+    font-size: 12px;
+    font-family: "my-custom-font-Regular";
+}
+
+select {
+    padding: 4px 8px;
+    width: 100%;
+}
+
+#gender-mail {
+    display: flex;
+    margin-top: 20px;
+    gap: 0px 10px;
+}
+
+.gender {
+    padding: 10 0px;
+    width: 50%;
+}
+
+.gender:hover {
+    background-color: aquamarine;
+}
+
+input[type="email"] {
+    padding: 4px 8px;
+    width: 93%;
+}
+input[type="submit"] {
+    padding: 12px 36px;
+    border: 2px solid black;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: transparent;
+
+    &:hover {
+      border: 2px solid #d80032;
+      color: #d80032;
+      animation: shaking 0.2s linear;
+    }
+  }
+
+  @keyframes shaking {
+    0% {
+      rotate: 20deg;
+    }
+    50% {
+      rotate: -20deg;
+    }
+    100% {
+      rotate: 20deg;
+    }
+  }

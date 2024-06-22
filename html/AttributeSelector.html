@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [href] {
+            color: brown;
+            font-size: 24px;
+            text-decoration: none;
+
+        }
+
+        a[target] {
+            color: rgb(26, 128, 0);
+        }
+
+        a[target='_self'] {
+            color: hotpink;
+            text-decoration: overline;
+        }
+
+        [id~=john] {
+            background-color: red;
+        }
+
+        [id |=sun] {
+            color: green;
+        }
+
+        [id |=flower] {
+            background-color: dodgerblue;
+        }
+        [id ^=sita]{
+            background-color: yellow;
+        }
+
+        [id $= ram]{
+            background-color: purple;
+        }
+
+        [id *=test]{
+            background-color: tomato;
+        }
+
+        input[type="range"],input[type="text"]{
+            background-color: red;
+            accent-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Attribute selector -->
+
+
+    <!-- 
+    1.[attr]{
+
+    }  -->
+    <h1>[attr]</h1>
+    <a href="" target="_self">Contact</a>
+    <a href="">Home</a>
+
+    <a href="" target="_blank">About</a>
+
+
+    <!-- 
+    2.
+     a[attr="value"]{
+     
+     } -->
+     <h1>a[attr="value"]</h1>
+    <a href="" target="_self">Contact</a>
+    <a href="">Home</a>
+
+    <a href="" target="_blank">About</a>
+    <!-- 
+    3.
+     [id ~= value]{
+      it will check exact value and  not consider the space
+     } -->
+
+     <h1>[id ~= value]</h1>
+    <div id="john cena">Between space</div>
+    <div id="   john cena  "> "" john cena ""</div>
+    <div id="johncena">johncena no space</div>
+    <div id=" john cena">""john cena</div>
+    <div id="cena john">"cena john"</div>
+
+
+    <!-- 
+    4. 
+     [id |= value]{
+           it will check exact value and consider the space
+
+     } -->
+           <h1>[id |= value]</h1>
+    <div id="sun-flower">"sun-flower"</div>
+    <div id=" sun-flower">" sun-flower"</div>
+    <div id="sunflower">"sunflower"</div>
+    <div id="flower-sun">"flower-sun"</div>
+    <div id="flower">"flower"</div>
+
+
+    <!-- 5.
+     ^==>cap operator
+    [id ^= value]{
+      exact value and it should be prefix 
+    } -->
+    <h1>[id ^= value]</h1>
+    <div id="ram-sita">"ram-sita"</div>
+    <div id="ram sita">"ram sita"</div>
+    <div id="sita-ram">"sita-ram"</div>
+    <div id="sita ram">"sita ram"</div>
+    <div id="sita">"sita"</div>
+    <div id="ram">"ram"</div>
+    <div id="ramsita">"ramsita"</div>
+
+
+     <!-- 6.
+    [id $= value]{
+      exact value and it should be suffix 
+    } -->
+     <h1>[id $= value]</h1>
+    <div id="ram-sita">"ram-sita"</div>
+    <div id="ram sita">"ram sita"</div>
+    <div id="sita-ram">"sita-ram"</div>
+    <div id="sita ram">"sita ram"</div>
+    <div id="sita">"sita"</div>
+    <div id="ram">"ram"</div>
+    <div id="ramsita">"ramsita"</div>
+
+    <!-- 7.
+    [id *= value]{
+        it check the exact value apperance
+    } -->
+    <h1>[id *= value]</h1>
+    <div id="skew-test">"skew-test"</div>
+    <div id="test">"test"</div>
+    <div id="skewtes">"skewtes"</div>
+    <div id="skew-testyantra">"skew-testyantra"</div>
+
+    <input type="range">meter
+    <label for="">NAme</label>
+    <input type="text">
+</body>
+
+</html>
