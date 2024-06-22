@@ -72,4 +72,4 @@ console.log(typeof (str+""));
     var age="23";
     console.log(typeof parseInt(age));
     var weigt="45.6"
-    console.log(typeof parseFloat(age), parseFloat(age));
+    // console.log(typeof parseFloat(age), parseFloat(age));
