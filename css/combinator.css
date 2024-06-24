@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.main-navblock{
+    height: 75px;
+    background-color: blueviolet;
+}
+.links > a{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 32px;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+.links button{
+    padding: 8px 16px;
+    color: white;
+    font-size: 28px;
+    border: transparent;
+    border-radius: 12px;
+}
+a+button{
+    margin-left: 450px;
+    background-color: rgb(16, 64,64) ;
+}
+a+button+button{
+    background-color: dodgerblue;
+}
